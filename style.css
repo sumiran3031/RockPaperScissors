@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smoothly animates all property changes */
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+.h2 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.choice {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.choice p {
+    font-weight: bold;
+    margin-top: 8px;
+    color: #081b31;
+}
+
+/* Hover and Click Animations */
+.choice:hover {
+    transform: translateY(-10px); /* Makes it float up */
+    background-color: #e8f0fe;
+}
+
+.choice:active {
+    transform: scale(0.9); /* Makes it look like it's being pressed */
+}
+
+img {
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 6rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #081b31;
+}
+
+/* Animation class triggered by JavaScript */
+.score-pop {
+    transform: scale(1.2);
+    color: #e67e22 !important;
+}
+
+.label {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.msg-container {
+    margin-top: 3rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    border-radius: 3rem;
+    transition: background-color 0.5s ease; /* Fade effect for message color */
+}
